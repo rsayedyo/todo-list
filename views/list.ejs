@@ -1,0 +1,29 @@
+<!-- jshint esversion:6 -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>To-Do list application</title>
+      <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+  <div class = "box" id="heading">
+    <h1>Today is <%=Datday%></h1>
+    </div>
+
+  <div class="box">
+<% for (var i = 0; i< NewListItems.length; i++) { %>
+<div class="item">
+  <input type="checkbox">
+    <p><%=NewListItems[i]%></p>
+    </div> 
+    <% } %>
+
+
+    <form class="" action="/" method="post">
+      <input type="text" name="newItem" placeholder="Add new item">
+      <button type="submit" name="button">+</button>
+    </form>
+    </div> 
+  </body>
+</html>
